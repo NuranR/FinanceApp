@@ -1,4 +1,4 @@
-﻿using FinanceApp.Models;
+using FinanceApp.Models;
 
 namespace FinanceApp.Data.Service
 {
@@ -6,5 +6,6 @@ namespace FinanceApp.Data.Service
     {
         Task<IEnumerable<Expense>> GetAll();
         Task Add(Expense expense);
+        IQueryable GetChartData();
     }
 }
