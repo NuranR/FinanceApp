@@ -11,7 +11,7 @@ namespace FinanceApp.Models
         [Range(0.01, double.MaxValue, ErrorMessage="Amount needs to be greater than 0")]
         public double Amount { get; set; }
         [Required]
-        public string Category { get; set; }
+        public string Category { get; set; } = null!;
         public DateTime Date { get; set; } = DateTime.Now;
     }
 }
